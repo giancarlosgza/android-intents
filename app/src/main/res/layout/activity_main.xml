@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de Teléfono"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:inputType="number"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/phoneBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Marcar"
+        android:layout_below="@+id/phoneText"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="intentTelefono"/>
+
+    <EditText
+        android:id="@+id/mapText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="URL"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@+id/phoneBtn"
+        android:inputType="textUri"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/openUrlBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir página web"
+        android:layout_below="@+id/mapText"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="intentWeb"/>
+
+    <Button
+        android:id="@+id/openMapBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir Maps"
+        android:layout_below="@+id/openUrlBtn"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#fff"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="intentMaps"/>
+
+</RelativeLayout>
